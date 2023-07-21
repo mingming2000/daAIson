@@ -36,7 +36,7 @@ This is because Miniconda/Anaconda offers a simple and strong distributed virtua
     - You do not need to declare an environment name.
 
 
-# How to run miniconda on Ubuntu (Edited by mkjeon)
+# How to run Miniconda3 on Ubuntu (Edited by mkjeon)
 
 > **NOTE** Run Ubunto terminal
 
