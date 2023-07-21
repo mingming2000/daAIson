@@ -66,10 +66,10 @@ Try [this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/)
 
 
 ## Activate Ctrl + V
-[A guildline for activating Ctrl+V](https://lungfish.tistory.com/entry/Ubuntu-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A1%9C-%EB%B3%B5%EC%82%AC-%EB%B6%99%EC%97%AC-%EB%84%A3%EA%B8%B0%EA%B0%80-%EC%95%88%EB%90%A0-%EB%95%8C#:~:text=%E2%80%BB%20%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C%20%EB%B3%B5%EC%82%AC%ED%95%A0,%2B%20Shift%20%2B%20V%20%EB%88%8C%EB%9F%AC%EC%95%BC%20%ED%95%A9%EB%8B%88%EB%8B%A4.)
+Try [This](https://lungfish.tistory.com/entry/Ubuntu-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A1%9C-%EB%B3%B5%EC%82%AC-%EB%B6%99%EC%97%AC-%EB%84%A3%EA%B8%B0%EA%B0%80-%EC%95%88%EB%90%A0-%EB%95%8C#:~:text=%E2%80%BB%20%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C%20%EB%B3%B5%EC%82%AC%ED%95%A0,%2B%20Shift%20%2B%20V%20%EB%88%8C%EB%9F%AC%EC%95%BC%20%ED%95%A9%EB%8B%88%EB%8B%A4.)
 
 
-## Install Miniconda3 (If you installed Miniconda3 'on Window')
+## Install Miniconda3 on Linux (If you installed Miniconda3 'on Window')
 1.
     ```
     $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
