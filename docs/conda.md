@@ -45,23 +45,22 @@ Try [this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/)
 
  
 ## Basic Ubuntu commends
-1.
-    '''
+    ```
     $ vim test.py                                    # Open a file to be edited
-    '''
-2.
-    '''
+    ```
+    
+    ```
     i                                                # Change to edit mode
-    '''
-3.
-    '''
+    ```
+    
+    ```
     [Esc]                                            # Chage mode
     :wq                                              # Close the file
-    '''
-4.
-    '''
+    ```
+    
+    ```
     $ python3 (file_name).py                            # Run python file
-    '''
+    ```
 ([ref](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
 
 
@@ -70,23 +69,23 @@ Try [this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/)
 
 
 ## Install Miniconda3 (If you installed Miniconda3 'on Window')
-1.
-    '''
+
+    ```
     $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-    '''
-2.
-    '''
+    ```
+    
+    ```
     $ bash Miniconda3-latest-Linux-x86_64.sh
-    '''
-3.
-    '''
+    ```
+    
+    ```
     $ source ~/.bashrc
-    '''
+    ```
 
     Now you can create virtual environment. ([ref](https://codingboycc.tistory.com/74))
-4.
+    
     If you can't excute virtual env, Try this.
-    '''
+    ```
     $ source (dir of linux)/miniconda3/etc/profile.d/conda.sh
-    '''
+    ```
     [ref](https://technical-support.tistory.com/112)
