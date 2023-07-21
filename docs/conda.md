@@ -35,5 +35,56 @@ This is because Miniconda/Anaconda offers a simple and strong distributed virtua
     ```
     - You do not need to declare an environment name.
 
-## Running python on Ubuntu
-> ([ref](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
+
+# How to run miniconda on Ubuntu (Edited by mkjeon)
+
+> **NOTE** Run Ubunto terminal
+
+## How to handle install Error 0x8007019e
+Try ([this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/))
+
+ 
+## Basic Ubuntu commends
+    '''
+    $ vim test.py                                    # Open a file to be edited
+    '''
+
+    '''
+    i                                                # Change to edit mode
+    '''
+
+    '''
+    [Esc]                                            # Chage mode
+    :wq                                              # Close the file
+    '''
+
+    '''
+    $ python3 (file_name).py                            # Run python file
+    '''
+([ref](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
+
+
+## Activate Ctrl + V
+([A guildline for activating Ctrl+V](https://lungfish.tistory.com/entry/Ubuntu-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A1%9C-%EB%B3%B5%EC%82%AC-%EB%B6%99%EC%97%AC-%EB%84%A3%EA%B8%B0%EA%B0%80-%EC%95%88%EB%90%A0-%EB%95%8C#:~:text=%E2%80%BB%20%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C%20%EB%B3%B5%EC%82%AC%ED%95%A0,%2B%20Shift%20%2B%20V%20%EB%88%8C%EB%9F%AC%EC%95%BC%20%ED%95%A9%EB%8B%88%EB%8B%A4.)
+
+
+## Install Miniconda3 (If you installed Miniconda3 'on Window')
+    '''
+    $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    '''
+
+    '''
+    $ bash Miniconda3-latest-Linux-x86_64.sh
+    '''
+
+    '''
+    $ source ~/.bashrc
+    '''
+
+    Now you can create virtual environment. ([ref](https://codingboycc.tistory.com/74))
+
+    If you can't excute virtual env, Try this.
+    '''
+    $ source (dir of linux)/miniconda3/etc/profile.d/conda.sh
+    '''
+    ([ref](https://technical-support.tistory.com/112))
