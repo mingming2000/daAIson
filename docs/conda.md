@@ -34,3 +34,6 @@ This is because Miniconda/Anaconda offers a simple and strong distributed virtua
     $ conda deactivate
     ```
     - You do not need to declare an environment name.
+
+## Running python on Ubuntu
+> ([ref](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
