@@ -41,23 +41,24 @@ This is because Miniconda/Anaconda offers a simple and strong distributed virtua
 > **NOTE** Run Ubunto terminal
 
 ## How to handle install Error 0x8007019e
-Try ([this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/))
+Try [this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/)
 
  
 ## Basic Ubuntu commends
+1.
     '''
     $ vim test.py                                    # Open a file to be edited
     '''
-
+2.
     '''
     i                                                # Change to edit mode
     '''
-
+3.
     '''
     [Esc]                                            # Chage mode
     :wq                                              # Close the file
     '''
-
+4.
     '''
     $ python3 (file_name).py                            # Run python file
     '''
@@ -69,22 +70,23 @@ Try ([this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/))
 
 
 ## Install Miniconda3 (If you installed Miniconda3 'on Window')
+1.
     '''
     $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
     '''
-
+2.
     '''
     $ bash Miniconda3-latest-Linux-x86_64.sh
     '''
-
+3.
     '''
     $ source ~/.bashrc
     '''
 
     Now you can create virtual environment. ([ref](https://codingboycc.tistory.com/74))
-
+4.
     If you can't excute virtual env, Try this.
     '''
     $ source (dir of linux)/miniconda3/etc/profile.d/conda.sh
     '''
-    ([ref](https://technical-support.tistory.com/112))
+    [ref](https://technical-support.tistory.com/112)
