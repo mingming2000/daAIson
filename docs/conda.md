@@ -62,9 +62,48 @@ Try [this](https://www.zinnunkebi.com/windows10-ubuntu-install-error/)
     ```
     $ python3 (file_name).py                            # Run python file
     ```
-([ref](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
+
+5. 
+   ```
+   mkdir (dir name)
+   mkdir -p (dir name/file name)
+    ```
+
+6.  
+    ```
+    rmdir (dir name)
+    ``` 
+      
+7. 
+   ```
+   touch (file name)
+   cat > (file name)
+   vi (file name)
+   ```
 
 
+8. 
+    ```
+    rm -rf (file name)
+    ```
+
+9. 
+    ```
+    mv [옵션] [이동시킬 디렉토리/파일] [이동 될 위치]
+
+    ex) mv log.txt folder
+    // 현재 디렉토리의 log.txt 파일을 folder 디렉토리로 이동
+
+    ex) mv log.txt log2.txt
+    // 현재 디렉토리의 log.txt 파일의 이름을 log2.txt로 변경
+
+    ex) mv /app/bin/logs/log.txt /app/dw
+    // /app/bin/logs 디렉토리의 log.txt 파일을 /app/dw 디렉토리로 이동
+    ```
+
+
+([Other commends](https://austcoconut.tistory.com/entry/%EB%AC%B4%EC%9E%91%EC%A0%95-%EB%94%B0%EB%9D%BC-%ED%95%98%EA%B8%B0-LinuxUbuntu%EC%97%90%EC%84%9C-Python-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%B6%95-python3-%EC%84%A4%EC%B9%98-pip-%EC%84%A4%EC%B9%98))
+     
 ## Activate Ctrl + V
 Try [This](https://lungfish.tistory.com/entry/Ubuntu-%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%A6%AC%EB%88%85%EC%8A%A4%EB%A1%9C-%EB%B3%B5%EC%82%AC-%EB%B6%99%EC%97%AC-%EB%84%A3%EA%B8%B0%EA%B0%80-%EC%95%88%EB%90%A0-%EB%95%8C#:~:text=%E2%80%BB%20%EC%9C%88%EB%8F%84%EC%9A%B0%EC%97%90%EC%84%9C%20%EB%B3%B5%EC%82%AC%ED%95%A0,%2B%20Shift%20%2B%20V%20%EB%88%8C%EB%9F%AC%EC%95%BC%20%ED%95%A9%EB%8B%88%EB%8B%A4.)
 
