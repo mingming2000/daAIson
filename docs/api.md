@@ -11,3 +11,11 @@ Try [this](https://cloud.google.com/sdk/docs/install-sdk?hl=ko#deb)
   ```
   $ sudo rm google-cloud-sdk.list
   ```
+
+## Setting API key (.json)
+  ```
+  $ export GOOGLE_APPLICATION_CREDENTIALS="KEY_PATH"
+  # ex) $ export GOOGLE_APPLICATION_CREDENTIALS="/Users/../Desktop/BEAM_CODE/Key.json"
+  ```
+
+  ([ref](https://ninano1109.tistory.com/186))
