@@ -93,3 +93,6 @@ It is useful when you are coding or managing for some project ([ref](https://www
     $ git reset --soft [commit]
     $ git reset --hard [commit]
     ```
+
+## Debugging error: Could not resolve host: github.com 
+Try [this](https://github.com/microsoft/WSL/issues/9452)
