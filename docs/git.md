@@ -71,8 +71,13 @@ It is useful when you are coding or managing for some project ([ref](https://www
     $ git pull
     $ git fetch
     ```
+    fetch repo when local files existing
+    ```
+    $ git fetch origin main
+    $ git pull
+    ```
 
-4. Branch and Merge
+5. Branch and Merge
     - Create a new branch
     ```
     $ git branch                # Print all of branches
@@ -88,7 +93,7 @@ It is useful when you are coding or managing for some project ([ref](https://www
     $ git merge <target-branch-name>
     ```
 
-5. Roll-back (Please read [this site](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0))
+6. Roll-back (Please read [this site](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0))
     ```
     $ git reset --soft [commit]
     $ git reset --hard [commit]
