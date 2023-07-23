@@ -111,8 +111,10 @@ Try [This](https://lungfish.tistory.com/entry/Ubuntu-%EC%9C%88%EB%8F%84%EC%9A%B0
 ## Install Miniconda3 on Linux (If you installed Miniconda3 'on Window')
 1.
     ```
-    $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh                                       # for desktop Ubuntu
+    $ wget https://github.com/conda-forge/miniforge/releases/download/23.1.0-4/Mambaforge-23.1.0-4-Linux-aarch64.sh    # for rasberrypi4 ubuntu 64bit
     ```
+    
 2.    
     ```
     $ bash Miniconda3-latest-Linux-x86_64.sh
