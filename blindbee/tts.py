@@ -1,25 +1,36 @@
-#!/usr/bin/env python
-# Copyright 2018 Google LLC
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-# All Rights Reserved.
+from google.cloud import texttospeech
 
-"""Google Cloud Text-To-Speech API sample application .
+from .camera import BlindBeeCamera 
 
-Example usage:
-    python quickstart.py
-"""
+
+class TextToSpeech():
+    def __init__(self):
+        self.client = texttospeech.TextToSpeechClient()
+    
+    def speechQR(self, txt):
+        synthesis_input = texttospeech.SynthesisInput(text=txt)
+
+        voice = texttospeech.VoiceSelectionParams(
+                        language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+                            )
+
+        # Select the type of audio file you want returned
+        audio_config = texttospeech.AudioConfig(
+            audio_encoding=texttospeech.AudioEncoding.MP3
+        )
+
+        # Perform the text-to-speech request on the text input with the selected
+        # voice parameters and audio file type
+        response = self.client.synthesize_speech(
+            input=synthesis_input, voice=voice, audio_config=audio_config
+        )
+
+        # The response's audio_content is binary.
+        with open("output123.mp3", "wb") as out:
+            # Write the response to the output file.
+            out.write(response.audio_content)
+            print('Audio content written to file "output.mp3"')
+        # [END tts_quickstart]
 
 
 def run_quickstart():
@@ -81,5 +92,3 @@ def run_quickstart():
     # [END tts_quickstart]
 
 
-if __name__ == "__main__":
-    run_quickstart()
