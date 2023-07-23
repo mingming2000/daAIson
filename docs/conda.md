@@ -130,4 +130,8 @@ If you can't excute virtual env, Try this. ([ref](https://technical-support.tist
     
     $ source (dir of linux)/miniconda3/etc/profile.d/conda.sh
     
+## Export env
+Try [this](https://otugi.tistory.com/381)
 
+## Install packages at once
+Try [this](https://zephyrus1111.tistory.com/405)
