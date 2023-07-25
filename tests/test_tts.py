@@ -1,13 +1,20 @@
-from blindbee import BlindBeeCamera, TextToSpeech
+from blindbee import BlindBeeCamera, TextToSpeech, tts
 
+# Text To Speech API
+# $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" 
+
+
+# Speech To Text API
+# $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
 
 if __name__ == "__main__":
-    #run_quickstart()
-    # $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json"
 
-    cam = BlindBeeCamera()
-    data, box, straight_qrcode = cam.regqr()
+    """
+    When testing QR -> tts
+    """
+    # cam = BlindBeeCamera()
+    # data, box, straight_qrcode = cam.testing()
     
-    tss = TextToSpeech()
-    tss.speechQR(data)
+    TTS= tts.TextToSpeech()
+    TTS.testing()
 

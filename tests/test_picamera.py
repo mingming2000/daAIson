@@ -6,5 +6,5 @@ if __name__ == "__main__":
     # $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json"
 
     cam = BlindBeeCamera()
-    data, box, straight_qrcode = cam.regqr()
+    data, box, straight_qrcode = cam.testing()
 
