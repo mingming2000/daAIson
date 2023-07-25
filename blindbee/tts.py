@@ -1,3 +1,4 @@
+import os
 from google.cloud import texttospeech
 
 from .camera import BlindBeeCamera 
@@ -33,6 +34,8 @@ class TextToSpeech():
         # [END tts_quickstart]
 
     def testing(self):
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
+            "/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json"
         synthesis_input = texttospeech.SynthesisInput(text="Testing Text to Speech")
 
         voice = texttospeech.VoiceSelectionParams(
@@ -41,7 +44,8 @@ class TextToSpeech():
 
         # Select the type of audio file you want returned
         audio_config = texttospeech.AudioConfig(
-            audio_encoding=texttospeech.AudioEncoding.MP3
+            # audio_encoding=texttospeech.AudioEncoding.MP3
+            audio_encoding=texttospeech.AudioEncoding.LINEAR16
         )
 
         # Perform the text-to-speech request on the text input with the selected
@@ -51,10 +55,10 @@ class TextToSpeech():
         )
 
         # The response's audio_content is binary.
-        with open("test_tts.mp3", "wb") as out:
+        with open("test_tts.linear16", "wb") as out:
             # Write the response to the output file.
             out.write(response.audio_content)
-            print('Audio content written to file "test_tts.mp3"')
+            print('Audio content written to file "test_tts.linear16"')
         # [END tts_quickstart]
 
 def run_quickstart():

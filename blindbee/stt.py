@@ -1,7 +1,8 @@
 import argparse
 
+import os
+import os.path as path
 from google.cloud import speech
-from os import path
 from pydub import AudioSegment
 
 # Speech To Text API
@@ -41,6 +42,8 @@ class SpeechToText():
         return response
 
     def testing(self) -> speech.RecognizeResponse:
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
+            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
         """Transcribe the given audio file."""
 
         # read audio file
