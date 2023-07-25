@@ -9,7 +9,7 @@ from blindbee import BlindBeeCamera, TextToSpeech, tts
 
 if __name__ == "__main__":
 
-    """
+    """ 
     When testing QR -> tts
     """
     # cam = BlindBeeCamera()
