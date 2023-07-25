@@ -1,31 +1,71 @@
 import argparse
 
 from google.cloud import speech
+from os import path
+from pydub import AudioSegment
 
-def transcribe_file(speech_file: str) -> speech.RecognizeResponse:
-    """Transcribe the given audio file."""
-    client = speech.SpeechClient()
+# Speech To Text API
+# $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
 
-    with open(speech_file, "rb") as audio_file:
-        content = audio_file.read()
+class SpeechToText():
+    def __init__(self):
+        self.client = speech.SpeechClient()
 
-    audio = speech.RecognitionAudio(content=content)
-    config = speech.RecognitionConfig(
-        encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-        sample_rate_hertz=16000,
-        language_code="en-US",
-    )
+    def record(self):
+        """
+        """
 
-    response = client.recognize(config=config, audio=audio)
+    def transcribe_audio_to_text(self, speech_file: str) -> speech.RecognizeResponse:
+        """Transcribe the given audio file."""
 
-    # Each result is for a consecutive portion of the audio. Iterate through
-    # them to get the transcripts for the entire audio file.
-    for result in response.results:
-        # The first alternative is the most likely one for this portion.
-        print(f"Transcript: {result.alternatives[0].transcript}")
+        # read audio file
+        with open(speech_file, "rb") as audio_file:
+            content = audio_file.read()
 
-    return response
 
-# if __name__ == 'main':
+        # Transcribe Audio to Text
+        audio = speech.RecognitionAudio(content=content)
+        config = speech.RecognitionConfig(
+            encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
+            sample_rate_hertz=16000,
+            language_code="en-US",
+        )
+        response = self.client.recognize(config=config, audio=audio)
 
-transcribe_file("./ENG_M_E014M3N2_044.pcm")    
+        # Each result is for a consecutive portion of the audio. Iterate through
+        # them to get the transcripts for the entire audio file.
+        for result in response.results:
+            # The first alternative is the most likely one for this portion.
+            print(f"Transcript: {result.alternatives[0].transcript}")
+
+        return response
+
+    def testing(self) -> speech.RecognizeResponse:
+        """Transcribe the given audio file."""
+
+        # read audio file
+        
+        # Not working on MP3!!!!!
+        speech_file = "/home/dspi/daAIson/tests/test_tts.linear16"
+        
+
+        with open(speech_file, "rb") as audio_file:
+            content = audio_file.read()
+
+
+        # Transcribe Audio to Text
+        audio = speech.RecognitionAudio(content=content)
+        config = speech.RecognitionConfig(
+            encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
+            #sample_rate_hertz=16000,   # Do not change!!
+            language_code="en-US",
+        )
+        response = self.client.recognize(config=config, audio=audio)
+
+        # Each result is for a consecutive portion of the audio. Iterate through
+        # them to get the transcripts for the entire audio file.
+        for result in response.results:
+            # The first alternative is the most likely one for this portion.
+            print(f"Transcript: {result.alternatives[0].transcript}")
+
+        return response  
