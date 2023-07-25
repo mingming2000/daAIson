@@ -49,6 +49,19 @@ class BlindBeeCamera(object):
                 break
         return data, box, straight_qrcode
 
+    def testing(self):
+        while True:
+            cur_img = self.image
+            data, box, straight_qrcode = self._qr_detector.detectAndDecode(cur_img)
+            print("-------------------------------------------------------")
+            print("Camera is working. The image is: ")
+            print(cur_img)
+            print("-------------------------------------------------------")
+            if data:
+                print(f"QR code is recognized as {data}")
+                break
+        return data, box, straight_qrcode
+
     # def regqr(self):
     #     self.cam.start_preview()
     #     qr = cv2.QRCodeDetector()
