@@ -1,47 +1,49 @@
 import pyaudio
 import wave
 
+class Recording():
+    def __init__(self):
+        self.p = pyaudio.PyAudio()
+        self.default_input_device_info = p.get_default_input_device_info()
+        
+        self.CHUNK = 1024
+        self.FORMAT = pyaudio.paInt16
+        self.CHANNELS = 9                           # the number of channels of device
+        self.RATE = 8000
+        self.RECORD_SECONDS = 5
+        self.input_device_index = 4
+    
+    def record(self):
+        WAVE_OUTPUT_FILENAME = "output.wav"
 
-p = pyaudio.PyAudio()
-default_input_device_info = p.get_default_input_device_info()
+        stream = self.p.open(format=FORMAT,
+                            channels=CHANNELS,
+                            rate=RATE,
+                            input=True,
+                            input_device_index=input_device_index,
+                            frames_per_buffer=CHUNK)
 
-CHUNK = 1024
-FORMAT = pyaudio.paInt16
-# CHANNELS = default_input_device_info['maxInputChannels']  
-CHANNELS = 9
-RATE = 8000
-RECORD_SECONDS = 5
-WAVE_OUTPUT_FILENAME = "output.wav"
+        print("Start to record the audio.")
 
-input_device_index = 4
+        frames = []
 
-stream = p.open(format=FORMAT,
-                channels=CHANNELS,
-                rate=RATE,
-                input=True,
-                input_device_index=input_device_index,
-                frames_per_buffer=CHUNK)
+        for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
+            data = stream.read(CHUNK)
+            frames.append(data)
 
-print("Start to record the audio.")
+        print("Recording is finished.")
 
-frames = []
+        stream.stop_stream()
+        stream.close()
+        p.terminate()
 
-for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-    data = stream.read(CHUNK)
-    frames.append(data)
+        wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
+        wf.setnchannels(CHANNELS)
+        wf.setsampwidth(p.get_sample_size(FORMAT))
+        wf.setframerate(RATE)
+        wf.writeframes(b''.join(frames))
+        wf.close()
 
-print("Recording is finished.")
-
-stream.stop_stream()
-stream.close()
-p.terminate()
-
-wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
-wf.setnchannels(CHANNELS)
-wf.setsampwidth(p.get_sample_size(FORMAT))
-wf.setframerate(RATE)
-wf.writeframes(b''.join(frames))
-wf.close()
 
 
 # wav 파일 읽기
