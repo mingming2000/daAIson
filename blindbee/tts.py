@@ -8,12 +8,13 @@ from google.cloud import texttospeech
 
 class TextToSpeech():
     def __init__(self):
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json" 
         self.client = texttospeech.TextToSpeechClient()
     
+    # def play_audio(self, txt):
     def play_audio(self, txt):
         # Set up google speech API
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
-        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \ /home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" # Speech To Text API
     
         # Input text to be spoken
         synthesis_input = texttospeech.SynthesisInput(text=txt)
@@ -30,14 +31,50 @@ class TextToSpeech():
         )
 
         # Save Audio file
-        with open("start_blindbee.linear16", "wb") as out:
+        with open("temp.linear16", "wb") as out:
             # Write the response to the output file.
             out.write(response.audio_content)
-            print('Audio content written to file "start_blindbee.linear16"')
+            print('Audio content written to file "temp.linear16"')
         
+
         # Play Audio file
         pygame.mixer.init()
-        p = pygame.mixer.Sound('/home/dspi/daAIson/tests/start_blindbee.linear16')    # audio file must be 16 bits.
+        p = pygame.mixer.Sound('/home/dspi/daAIson/main/temp.linear16')    # audio file must be 16 bits.
+        p.play()
+        time.sleep(10.0)
+        p.stop()
+
+    def mkaudio(self, txt):
+        # Set up google speech API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
+    
+        # Input text to be spoken
+        synthesis_input = texttospeech.SynthesisInput(text=txt)
+
+        # Create voice
+        voice = texttospeech.VoiceSelectionParams(
+                        language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+                            )
+        audio_config = texttospeech.AudioConfig(
+            audio_encoding=texttospeech.AudioEncoding.LINEAR16
+        )
+        response = self.client.synthesize_speech(
+            input=synthesis_input, voice=voice, audio_config=audio_config
+        )
+
+        # Save Audio file
+        # with open("temp.linear16", "wb") as out:
+        with open(f"/home/dspi/daAIson/main/{txt}.linear16", "wb") as out:
+            # Write t/home/dspi/daAIson/main/he response to the output file.
+            out.write(response.audio_content)
+            # print('Audio content written to file "temp.mp3"')
+            print(f'Audio content written to file "{txt}.linear16"')
+        
+
+        # Play Audio file
+        pygame.mixer.init()
+        p = pygame.mixer.Sound(f'/home/dspi/daAIson/main/{txt}.linear16')    # audio file must be 16 bits.
+        # p = pygame.mixer.Sound('/home/dspi/daAIson/main/temp.mp3')    # audio file must be 16 bits.
         p.play()
         time.sleep(10.0)
         p.stop()

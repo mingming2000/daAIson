@@ -10,6 +10,8 @@ from pydub import AudioSegment
 
 class SpeechToText():
     def __init__(self):
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
+            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
         self.client = speech.SpeechClient()
 
     def record(self):
@@ -17,6 +19,8 @@ class SpeechToText():
         """
 
     def transcribe_audio_to_text(self, speech_file: str) -> speech.RecognizeResponse:
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
+            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
         """Transcribe the given audio file."""
 
         # read audio file

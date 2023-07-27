@@ -6,7 +6,7 @@ p = pygame.mixer.Sound('/home/dspi/daAIson/tests/test_tts.linear16')    # audio 
 
 while True:
     p.play()
-    time.sleep(10.0)
+    time.sleep(3.0)
     p.stop()
     break
 
