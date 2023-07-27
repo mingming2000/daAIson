@@ -1,0 +1,11 @@
+--2023-07-26 03:03:50--  https://www.wch.cn/downloads/file/177.html?time=2023-03-17%2016:58:39
+Resolving www.wch.cn (www.wch.cn)... 58.213.45.186
+Connecting to www.wch.cn (www.wch.cn)|58.213.45.186|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12716 (12K) [application/zip]
+Saving to: ‘177.html?time=2023-03-17 16:58:39’
+
+177.html?time=2023-03-17 16:58:39         0%[                                                                               ]       0  --.-KB/s               177.html?time=2023-03-17 16:58:39       100%[==============================================================================>]  12.42K  --.-KB/s    in 0s      
+
+2023-07-26 03:03:52 (78.9 MB/s) - ‘177.html?time=2023-03-17 16:58:39’ saved [12716/12716]
+

@@ -1,37 +1,80 @@
 import os
+import time
+import pygame
 from google.cloud import texttospeech
 
-from .camera import BlindBeeCamera 
+# from .camera import BindBeeCamera 
 
 
 class TextToSpeech():
     def __init__(self):
         self.client = texttospeech.TextToSpeechClient()
     
-    def speechQR(self, txt):
+    def play_audio(self, txt):
+        # Set up google speech API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
+        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \ /home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" # Speech To Text API
+    
+        # Input text to be spoken
         synthesis_input = texttospeech.SynthesisInput(text=txt)
 
+        # Create voice
         voice = texttospeech.VoiceSelectionParams(
                         language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
                             )
-
-        # Select the type of audio file you want returned
         audio_config = texttospeech.AudioConfig(
-            audio_encoding=texttospeech.AudioEncoding.MP3
+            audio_encoding=texttospeech.AudioEncoding.LINEAR16
         )
-
-        # Perform the text-to-speech request on the text input with the selected
-        # voice parameters and audio file type
         response = self.client.synthesize_speech(
             input=synthesis_input, voice=voice, audio_config=audio_config
         )
 
-        # The response's audio_content is binary.
-        with open("output123.mp3", "wb") as out:
+        # Save Audio file
+        with open("start_blindbee.linear16", "wb") as out:
             # Write the response to the output file.
             out.write(response.audio_content)
-            print('Audio content written to file "output.mp3"')
-        # [END tts_quickstart]
+            print('Audio content written to file "start_blindbee.linear16"')
+        
+        # Play Audio file
+        pygame.mixer.init()
+        p = pygame.mixer.Sound('/home/dspi/daAIson/tests/start_blindbee.linear16')    # audio file must be 16 bits.
+        p.play()
+        time.sleep(10.0)
+        p.stop()
+
+
+    def translationQR(self, txt):
+        # Set up google speech API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
+        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \ /home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" # Speech To Text API
+    
+        # Input text to be spoken
+        synthesis_input = texttospeech.SynthesisInput(text=txt)
+
+        # Create voice
+        voice = texttospeech.VoiceSelectionParams(
+                        language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+                            )
+        audio_config = texttospeech.AudioConfig(
+            audio_encoding=texttospeech.AudioEncoding.LINEAR16
+        )
+        response = self.client.synthesize_speech(
+            input=synthesis_input, voice=voice, audio_config=audio_config
+        )
+
+        # Save Audio file
+        with open("temp.linear16", "wb") as out:
+            # Write the response to the output file.
+            out.write(response.audio_content)
+            print('Audio content written to file "temp.linear16"')
+        
+        # Play Audio file
+        pygame.mixer.init()
+        p = pygame.mixer.Sound('/home/dspi/daAIson/tests/temp.linear16')    # audio file must be 16 bits.
+        p.play()
+        time.sleep(10.0)
+        p.stop()
+
 
     def testing(self):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \

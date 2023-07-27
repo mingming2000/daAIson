@@ -1,4 +1,4 @@
-from blindbee import BlindBeeCamera, TextToSpeech, tts
+from blindbee import TextToSpeech, tts
 
 # Text To Speech API
 # $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" 
@@ -16,5 +16,5 @@ if __name__ == "__main__":
     # data, box, straight_qrcode = cam.testing()
     
     TTS= tts.TextToSpeech()
-    TTS.testing()
+    TTS.translationQR("Hello World!")
 
