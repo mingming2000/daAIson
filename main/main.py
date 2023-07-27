@@ -1,11 +1,11 @@
 import csv
 
 from blindbee import tts
-from blindbee import tts
-from blibdbee import record
+from blindbee import stt
+from blindbee import record
 from blindbee import camera
 
-if __name__ = '__main__':
+if __name__ == '__main__':
 
     print("------ Start BlineBee ------")
 
@@ -36,7 +36,7 @@ if __name__ = '__main__':
             f.close()
 
         t.play_audio(f"The object is {name1} and saved as QR number {num1}.")
-    elif(repond1 == 'saving'):
+    elif(respond1 == 'saving'):
         t.play_audio("Please tell me the qr number.")
         r.recording("temp_input_audio.linear16")
         num2 = s.transcribe_audio_to_text("temp_input_audio.linear16")

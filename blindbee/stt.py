@@ -28,7 +28,7 @@ class SpeechToText():
         audio = speech.RecognitionAudio(content=content)
         config = speech.RecognitionConfig(
             encoding=speech.RecognitionConfig.AudioEncoding.LINEAR16,
-            sample_rate_hertz=16000,
+            # sample_rate_hertz=16000,
             language_code="en-US",
         )
         response = self.client.recognize(config=config, audio=audio)
@@ -38,8 +38,9 @@ class SpeechToText():
         for result in response.results:
             # The first alternative is the most likely one for this portion.
             print(f"Transcript: {result.alternatives[0].transcript}")
+            text = f'{result.alternatives[0].transcript} '
 
-        return response
+        return text
 
     def testing(self) -> speech.RecognizeResponse:
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \

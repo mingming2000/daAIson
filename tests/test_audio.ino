@@ -1,26 +1,12 @@
-import RPi.GPIO as GPIO
-import time
+#define SPEAKER_PIN 9
 
-# 사용할 GPIO 핀 번호 설정
-SPEAKER_PIN = 18
+void setup() {
+  pinMode(SPEAKER_PIN, OUTPUT);
+}
 
-# GPIO 핀 번호 설정
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(SPEAKER_PIN, GPIO.OUT)
-
-def turn_speaker_on():
-    GPIO.output(SPEAKER_PIN, GPIO.HIGH)
-
-def turn_speaker_off():
-    GPIO.output(SPEAKER_PIN, GPIO.LOW)
-
-try:
-    while True:
-        turn_speaker_on()
-        time.sleep(1)
-        print()
-        turn_speaker_off()
-        time.sleep(1)
-
-except KeyboardInterrupt: 
-    GPIO.cleanup()
+void loop() {
+  tone(SPEAKER_PIN, 1000); // 1000Hz의 주파수로 소리를 내는 함수
+  delay(1000); // 1초간 소리 유지
+  noTone(SPEAKER_PIN); // 소리를 끕니다.
+  delay(1000); // 1초간 소리를 끈 상태 유지
+}

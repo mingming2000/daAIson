@@ -40,7 +40,7 @@ class BlindBeeCamera(object):
         self._cam.stop_preview()
         return cv2.imread(self._image_file)
 
-    def regqr(self):
+    def recognize_qr(self):
         while True:
             cur_img = self.image
             data, box, straight_qrcode = self._qr_detector.detectAndDecode(cur_img)
