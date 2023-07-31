@@ -5,7 +5,7 @@ We made BB in the form of bees and beehives.
 This was done to make it easy for visually impaired people to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
 The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
 
-the size of body is 150*150*120 (mm)
+the size of body is 150 X 150 X 120 (mm)
 
 PICTURE
 ---------
