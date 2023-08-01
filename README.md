@@ -11,7 +11,11 @@ $ git clone https://github.com/mingming2000/daAIson.git
 
 Motivation
 =============
-The passage describes a device designed to assist visually impaired individuals in distinguishing and identifying various objects commonly found in daily life, such as sealed containers, PET bottles, cosmetics, and medicine bottles, which may have similar shapes but contain different contents. The current methods available to visually impaired individuals, such as smartphone apps that read text or video calls with social workers for assistance, have limitations. The proposed device aims to address these challenges by providing a user-friendly way for visually impaired individuals to store and differentiate object information.
+Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are everyday objects. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for visually impaired individuals to do the same. (source: https://www.joongang.co.kr/article/23615660#home)
+
+Currently, there are options available, such as smartphone apps that read text or video calls with social workers, to assist visually impaired individuals. However, these methods may be challenging for visually impaired individuals as they require pressing application buttons or making phone calls, which can be difficult using a phone.
+
+Additionally, some products have Braille on them, but it is inadequate. For example, all beverages may be labeled simply as "beverage" or "carbonated," making it hard to distinguish specific product names. To address these issues and enable visually impaired individuals to independently identify objects, the team aimed to create a device that can easily store and differentiate object information.
 
 Ideas
 ====================
