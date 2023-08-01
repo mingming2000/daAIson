@@ -33,8 +33,14 @@ BB_Body - There is a device that outputs voices for each situation and recognize
 
 CAD filed 
 ----------
-cad files 
-[BB_CAD.zip](https://github.com/mingming2000/daAIson/files/12224913/BB_CAD.zip)
+here is cad files 
+
+[BB_CAD.zip](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip)
+
+
+In cad_BB.zip, the following folders and files are composed.
+
+![CAD_excell](https://github.com/mingming2000/daAIson/assets/138636306/9e69a6b9-5208-4751-a4a7-e9bf905a0547)
 
 Blind Bee Composition
 =============
