@@ -36,6 +36,12 @@ CAD filed
 cad files 
 https://github.com/mingming2000/daAIson/files/12213902/BB_cad.Zip
 
+Blind Bee Composition
+=============
+BB is composed of many circuits and components such as Raspberry Pi 4 and Arduino Nano.
+We will show you simple circuit diagram and explain usage of each circuit and component. 
+
+
 
 
 
