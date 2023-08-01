@@ -51,6 +51,16 @@ Circuit file
 --------------
 [Circuit Diagram](https://github.com/mingming2000/daAIson/files/12224828/Circuit.Diagram.xlsx)
 
+This is a simple diagram of how the circuit will connect and work.
+
+![circuit_overview](https://github.com/mingming2000/daAIson/assets/138636306/90e2c154-08db-4d0e-b6ac-1404fd2c0482)
+
+This is a picture of how the circuit's power is distributed.
+
+
+![circuit_power](https://github.com/mingming2000/daAIson/assets/138636306/4cfde137-8fe3-4d2d-aba0-afd847fcdf9c)
+
+
 > 1F
 > - First floor of circuit is power connection layer. We get 12V electricity from power supply and also get 5v electricity from external power using 5V converter. We use box socket for convinience of supplying power. Box socket is emplaced on each layer of circuit, so we can easily divide and supply 5V / 12V power.
 
