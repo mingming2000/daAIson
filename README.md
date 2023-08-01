@@ -9,9 +9,21 @@ $ git clone https://github.com/mingming2000/daAIson.git
 
 ![image](https://github.com/mingming2000/daAIson/assets/102716945/69e5ae9b-3488-426a-9ecf-a3037c19946c)
 
+Motivation
+=============
+The passage describes a device designed to assist visually impaired individuals in distinguishing and identifying various objects commonly found in daily life, such as sealed containers, PET bottles, cosmetics, and medicine bottles, which may have similar shapes but contain different contents. The current methods available to visually impaired individuals, such as smartphone apps that read text or video calls with social workers for assistance, have limitations. The proposed device aims to address these challenges by providing a user-friendly way for visually impaired individuals to store and differentiate object information.
 
+Ideas
+====================
+The device incorporates two main approaches: QR codes and Braille output. QR codes are used to store information about the objects, making it easy to encode and decode data. The device utilizes a camera and open CV technology to recognize QR codes visually. To assist tactile recognition, Braille is printed around the QR codes so that visually impaired individuals can differentiate objects using their sense of touch. Instead of expensive Braille printers, the device employs affordable solenoid actuators to create embossed Braille on paper.
 
-Bline Be Design
+To ensure ease of use for visually impaired users, the team designed the device to be entirely voice-operated. They utilized Google API for text-to-speech and speech-to-text conversions, enabling visually impaired individuals to interact with the device using voice commands.
+
+Considering the unique needs of visually impaired individuals, the team also paid special attention to the design of the device. They used a yellow color for the device's appearance, which is easy for visually impaired individuals to recognize. Additionally, they chose a distinctive shape, resembling a bee, to facilitate tactile differentiation.
+
+In summary, the passage discusses the development of a device with QR codes and Braille output to assist visually impaired individuals in identifying and distinguishing everyday objects. The device is voice-operated and designed with specific features to cater to the needs of visually impaired users.
+
+Blind Bee Design
 =============
 
 We made BB in the form of bees and beehives. 
