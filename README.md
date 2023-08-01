@@ -31,7 +31,7 @@ BB_camera - Here is a device that recognizes qr.
 
 BB_Body - There is a device that outputs voices for each situation and recognizes voices and a device that prints braille.
 
-CAD filed 
+CAD file
 ----------
 here is cad files 
 
