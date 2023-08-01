@@ -68,6 +68,11 @@ This is a picture of how the circuit's power is distributed.
 > - Second floor of circuit is Arduino-Relay layer. We use Arduino nano to control Relay-module and Infrared-sensor. Arduino nano get 5V, 20mA electricity to VCC and GND PIN and Arduiono send output signal to Relay-module(PIN 2,3,5,6,7,8) and Infrared-sensor (PIN 10).
 > - Relay-module is used to control Solenoids. we connect 12V electricity to COM terminal of Relay-module. If signal is sent to Signal-input of Relay-module, 12V electricity is supplied to Solenoids. 
 
+> 2.5F (Solenoids circuit)
+> - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG.
+
+> 3F
+> - 
 
 
 
