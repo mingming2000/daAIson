@@ -41,6 +41,10 @@ Blind Bee Composition
 BB is composed of many circuits and components such as Raspberry Pi 4 and Arduino Nano.
 We will show you simple circuit diagram and explain usage of each circuit and component. 
 
+Circuit file
+--------------
+[Circuit Diagram](https://github.com/mingming2000/daAIson/files/12224828/Circuit.Diagram.xlsx)
+
 
 
 
