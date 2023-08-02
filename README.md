@@ -97,9 +97,14 @@ This is a picture of how the circuit's power is distributed.
 Components
 ------------
 
-### Raspberry PI
-> asd
+#### Raspberry Pi
+> Raspberry Pi on 2F run overall code of our project and also take input from MIC, print output to speaker and control Arduino nano using serial communication. Raspberry Pi on camera module is connected to camera module and communicate image information in real time with Raspberry Pi on 2F. Rated voltage and current for Raspberry Pi is 5V, 3A. As it control entire product, we put effort to stably supplying power for Raspberry Pi.
 
+#### Arduino Nano
+> Arduino Nano get is communicate with Raspberry Pi with serial communication. When Nano get signal, it activate relay module and infrared sensor as compiled code. Likewise Arduino control our braille printer, so stable power supplying is important in our project
+
+#### Relay Module
+> ![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/85422a9c-942f-4082-a989-dc48aeeba732) Relay Module
 
 Possiblilty of futher developement
 =============
