@@ -105,8 +105,7 @@ Components
 
 #### Infrared Sensor (SEN030111)
 > ![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/140086562/53d5daa9-d9cd-40d2-ad7b-b270e1659127)
-ddd
-
+Infrared Sensor detect move between two infrared sensor. We use this sensor for detecting insert of paper in printer. When sensor detect code, arduino get signal from sensor and send signal to relay modules.
 
 #### Relay Module
 >  ![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/f8633603-c7e3-4fc8-8a98-ef7e566220ec)                                          Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
@@ -121,7 +120,7 @@ ddd
 > As Rated Voltage of Raspberry Pi is 5V, we need to step down voltage of batteries. Otherwise overvoltage cause damage on Raspberry Pi board. Regulator is sort of step down convertor. It convert high voltage to specific voltage, besides regulator step down voltage to decided voltage regardless of input voltage. So we secure stable power consumption for Raspberry Pi by using regulator
 
 #### MIC / Speaker
-> 
+> First input device and last output device. Our voice detected in MIC converts to text file. Speaker also print voice which converted from text file.
 
  
 Possiblilty of futher developement
