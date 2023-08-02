@@ -97,6 +97,9 @@ This is a picture of how the circuit's power is distributed.
 Components
 ------------
 
+### Raspberry PI
+> asd
+
 
 Possiblilty of futher developement
 =============
