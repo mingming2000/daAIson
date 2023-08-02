@@ -86,10 +86,10 @@ This is a picture of how the circuit's power is distributed.
 > - Relay-module is used to control Solenoids. we connect 12V electricity to COM terminal of Relay-module. If signal is sent to Signal-input of Relay-module, 12V electricity is supplied to Solenoids. 
 
 > 2.5F (Solenoids circuit)
-> - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG.
+> - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG. Solenoids activate sequentially only when they get 12V electricity from Relay-module, so power can be ditributed efficiently.  
 
 > 3F
-> - 
+> - Third floor of circuit is Raspberry Pi layer. We use Raspberry Pi to run overall code of our product and also communicate with another Raspberry Pi in Camera module part. 
 
 
 Possiblilty of futher developement
