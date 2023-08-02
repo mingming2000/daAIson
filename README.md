@@ -89,7 +89,10 @@ This is a picture of how the circuit's power is distributed.
 > - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG. Solenoids activate sequentially only when they get 12V electricity from Relay-module, so power can be ditributed efficiently.  
 
 > 3F
-> - Third floor of circuit is Raspberry Pi layer. We use Raspberry Pi to run overall code of our product and also communicate with another Raspberry Pi in Camera module part. 
+> - Third floor of circuit is Raspberry Pi layer. We use Raspberry Pi to run overall code of our product and communicate with another Raspberry Pi in Camera module part. Also battery charging module is connected to 5V electricity and GND, so we can charge lithium polymer battery in camera module.
+
+> Camera Module
+> - On Camera Module part, another Raspberry Pi 4 and camera module is connected to PCB board. As Camera Module is separated with main body, so we should prepare another power supply for Raspberry Pi 4. We use two 3.4V lithuim polymer battery and connect it serially. two serially connected battery supply 7.8V voltage, but rated voltage of Raspberry Pi 4 i 5V. So we use regulator for stepping down voltage 7.8V to 5V
 
 
 Possiblilty of futher developement
