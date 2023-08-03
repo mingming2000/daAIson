@@ -3,8 +3,9 @@
 >We are `daAIson` of Korea Univ. [HandS](https://hands.korea.ac.kr/)
 ><br>We made `BlindBee` in the form of bees and beehives. 
 ><br>
-><br>This was done to make it easy for `visually impaired people` to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
-
+><br>This was done to make it easy for `visually impaired people` to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design.
+>
+>The project aims to assist visually impaired individuals in distinguishing {everyday objects} like containers and cosmetic products. We've used {QR codes} for information storage, recognized by the camera, and incorporated {Braille output} for tactile identification. The device features voice-operated functions using {Google API} for ease of use. The design considered visually impaired users, utilizing a {yellow color} and a {bee-shaped appearance} for easy recognition through touch.
 <br>
 <br>
 <br>
