@@ -20,17 +20,17 @@
 <br>
 
 # Table of content
- 1. [Motivation](#1.-Motivation)
+ 1. [Motivation](#Motivation)
     1) [Ideas](#Ideas)
- 3. [Software](#2.-Software)
+ 3. [Software](#Software)
     1) [State Diagram](#State-Diagram)
     2) [File Hierarcy](#file-hierarcy)
- 5. [Hardware](#3.Hardware)
+ 5. [Hardware](#Hardware)
     1. [Design](#Design)
     2. [Circuit files](#Circuit-files)
     3. [Simple Diagram of Circuit](#Simple-diagram-of-circuit)
- 6. [Discussion](#4.Discussion)
- 7. [Appendix](#5.Appendix)
+ 6. [Discussion](#Discussion)
+ 7. [Appendix](#Appendix)
 
 <br>
 <br>
@@ -68,7 +68,7 @@ In summary, the passage discusses the development of a device with QR codes and 
 <br>
 <br>
 
-# 2. Software
+# Software
 You can find pip list [here](#pip-list). All codes are written by python.
 
 Technologies used are
@@ -122,7 +122,7 @@ Technologies used are
 <br>
 <br>
 
-# 3.Hardware
+# Hardware
 ## Design
 The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
 You can also download CAD files [here](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip).
@@ -188,7 +188,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-4.Discussion
+Discussion
 =============
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
@@ -198,7 +198,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-## 5.Appendix
+## Appendix
 ### Clone Our Github Project!
 
 ```
