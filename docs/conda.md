@@ -1,7 +1,5 @@
 # How to use Miniconda/Anaconda
 This markdown file offers a quick guide to how to use Miniconda/Anaconda for beginners. 
-If you have questions about Miniconda/Anaconda, feel free to contact me (HeumWoo Park, 010-2398-8643).
-> **NOTE** You must delete my phone number before opening this repository to the Public! It is a sensitive part!
 
 ## What is Miniconda/Anaconda?
 `Anaconda` is a distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment ([ref](https://en.wikipedia.org/wiki/Anaconda_(Python_distribution))).
