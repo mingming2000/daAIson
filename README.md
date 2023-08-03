@@ -1,9 +1,9 @@
 ![image](https://github.com/mingming2000/daAIson/assets/102716945/69e5ae9b-3488-426a-9ecf-a3037c19946c)
 
->We are **daAIson** of Korea Univ. **HandS** 
-><br>We made BlindBee in the form of bees and beehives. 
+>We are `daAIson` of Korea Univ. [HandS](https://hands.korea.ac.kr/)
+><br>We made `BlindBee` in the form of bees and beehives. 
 ><br>
-><br>This was done to make it easy for **visually impaired people** to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
+><br>This was done to make it easy for `visually impaired people` to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
 
 <br>
 <br>
@@ -79,13 +79,13 @@ Technologies used are
 ## State Diagram
 <p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/3711c096-3833-4f30-986e-648e5f23e6d4></p>
 
-- **S0**: standby. When switch on, it changes to State1 (S1)
-- **S1**: starts BlindBee. says "What can I help you?"
+- `S0`: standby. When switch on, it changes to State1 (S1)
+- `S1`: starts BlindBee. says "What can I help you?"
   <br>If user answers "Detecting"(detect object), the state changes to state2.
   <br>elif user answers "Saving"(register object), the state changes to state3. 
-- **S2**: client starts to detect QR code and returns name of QR code.
+- `S2`: client starts to detect QR code and returns name of QR code.
   <br>When server receives this, it converts it to object name refering qr.csv and speaks "The object is {object name}"
-- **S3**: When user says object name and QR number, server saves them in qr.csv
+- `S3`: When user says object name and QR number, server saves them in qr.csv
 
 ## file hierarcy
 <p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/6a18278c-bcc1-48e8-bb03-1b3a5c41b27e></p>
@@ -401,3 +401,6 @@ As Rated Voltage of Raspberry Pi is 5V, we need to step down voltage of batterie
 
 #### MIC / Speaker
 First input device and last output device. Our voice detected in MIC converts to text file. Speaker also print voice which converted from text file.
+
+
+<img src = https://github.com/mingming2000/daAIson/assets/102716945/fcac4a72-0d84-47e3-ac4d-b200684067dd>
