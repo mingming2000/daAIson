@@ -22,7 +22,7 @@
 # Table of content
  1. [Motivation](#1.-Motivation)
     1) [Ideas](#Ideas)
- 3. [Software](#2.Software)
+ 3. [Software](#2.-Software)
     1) [State Diagram](#State-Diagram)
     2) [File Hierarcy](#file-hierarcy)
  5. [Hardware](#3.Hardware)
