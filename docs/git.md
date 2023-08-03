@@ -1,7 +1,6 @@
 # How to ues Git/Github for beginners
 This markdown file offers a quick guide to how to use Git/Github for beginners. 
-If you have questions about Git/Github, feel free to contact me (HeumWoo Park, 010-2398-8643).
-> **NOTE** You must delete my phone number before opening this repository to the Public! It is a sensitive part!
+
 
 ## What is Git/Github?
 - `git` is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency ([ref](https://git-scm.com/)).
