@@ -12,6 +12,9 @@ class TextToSpeech():
         self.client = texttospeech.TextToSpeechClient()
     
     # def play_audio(self, txt):
+    #def play_saved_audio(self, dir):
+    
+
     def play_audio(self, txt):
         # Set up google speech API
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
@@ -103,7 +106,7 @@ class TextToSpeech():
         with open("temp.linear16", "wb") as out:
             # Write the response to the output file.
             out.write(response.audio_content)
-            print('Audio content written to file "temp.linear16"')
+            # print('Audio content written to file "temp.linear16"')    # for Debugging
         
         # Play Audio file
         pygame.mixer.init()
@@ -113,7 +116,7 @@ class TextToSpeech():
         p.stop()
 
 
-    def testing(self):
+    def testing(self, file_name):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
             "/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json"
         synthesis_input = texttospeech.SynthesisInput(text="Testing Text to Speech")
@@ -135,10 +138,10 @@ class TextToSpeech():
         )
 
         # The response's audio_content is binary.
-        with open("test_tts.linear16", "wb") as out:
+        with open(f"/home/dspi/daAIson/main/audiofiles/{file_name}.linear16", "wb") as out:
             # Write the response to the output file.
             out.write(response.audio_content)
-            print('Audio content written to file "test_tts.linear16"')
+            print(f'Audio content written to file "{file_name}.linear16"')
         # [END tts_quickstart]
 
 def run_quickstart():
