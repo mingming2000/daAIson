@@ -22,7 +22,7 @@ static routers="<current rasp IP (change last adress to 1)" # ex. static routers
 ```
 $ sudo run apt-get update
 $ sudo apt-get install -y libgl1-mesa-dev
-``
+```
 
 ## 패키지 URL 중복 설치된 것 삭제
 ```
