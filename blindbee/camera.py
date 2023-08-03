@@ -2,12 +2,12 @@ from typing import *
 import logging
 # from abc import abstractmethod, abstractclassmethod, abstractproperty
 
-from picamera import PiCamera
 from time import sleep
 import qrcode as qr
 import cv2
 import numpy as np
 
+# from blindbee import flask_server///
 
 # class _Interface(object):
 #     @abstractproperty
@@ -18,12 +18,14 @@ import numpy as np
 
 
 class BlindBeeCamera(object):
-    '''
-        Hello, world!
-    '''
-    _qr_detector = cv2.QRCodeDetector()
-    _cam = PiCamera()
-    _image_file = "test.jpg"
+    def __init__(self):
+        from picamera import PiCamera
+        '''
+            Hello, world!
+        '''
+        self._qr_detector = cv2.QRCodeDetector()
+        self._cam = PiCamera()
+        self._image_file = "test.jpg"
 
     # @staticmethod
     # def get_outcome2():
