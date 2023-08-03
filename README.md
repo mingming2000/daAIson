@@ -31,6 +31,7 @@
     1. [Design](#Design)
     2. [Circuit files](#Circuit-files)
     3. [Simple Diagram of Circuit](#Simple-diagram-of-circuit)
+    4. [Usage of Each Components](#Usage-of-Each-Components)
  6. [Discussion](#Discussion)
  7. [Appendix](#Appendix)
 
@@ -181,7 +182,32 @@ This is a picture of how the circuit's power is distributed.
  **Camera Module**
  - On Camera Module part, another Raspberry Pi 4 and camera module is connected to PCB board. As Camera Module is separated with main body, so we should prepare another power supply for Raspberry Pi 4. We use two 3.4V lithuim polymer battery and connect it serially. two serially connected battery supply 7.8V voltage, but rated voltage of Raspberry Pi 4 i 5V. So we use regulator for stepping down voltage 7.8V to 5V
 
+## Usage of Each Components
 
+#### Raspberry Pi
+Raspberry Pi on 2F run overall code of our project and also take input from MIC, print output to speaker and control Arduino nano using serial communication. Raspberry Pi on camera module is connected to camera module and communicate image information in real time with Raspberry Pi on 2F. Rated voltage and current for Raspberry Pi is 5V, 3A. As it control entire product, we put effort to stably supplying power for Raspberry Pi.
+
+#### Arduino Nano
+Arduino Nano communicate with Raspberry Pi with serial communication. When Nano get signal, it activate relay module and infrared sensor as compiled code. Likewise Arduino control our braille printer, so stable power supplying is important in our project
+
+#### Infrared Sensor (SEN030111)
+![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/140086562/53d5daa9-d9cd-40d2-ad7b-b270e1659127)
+Infrared Sensor detect move between two infrared sensor. We use this sensor for detecting insert of paper in printer. When sensor detect code, arduino get signal from sensor and send signal to relay modules.
+
+#### Relay Module
+![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/f8633603-c7e3-4fc8-8a98-ef7e566220ec)                                          Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
+
+#### Solenoid (JF-0530B-12V)
+Solenoid activate when 12V or more voltage applied to itself. By magnetic force iron rod in solenoids move when electricity flows. We use this move of rod as printer. When paper is detected, we run code for printing. However power consumption of solenoid is higher than we think, so it is hard to activate 6 solenoids at once. We use relay module for individual control of solenoids. For each time only one solenoid activate, so we prevent shortage of power.
+
+#### Lithium Polymer Battery (DTP 804030 1000) & Battery Charging Module (SZH-EK026)
+We use two 3.4V / 1000mAh lithium polymer battery. We connect is serially and use it as 7.8V power supply for Raspberry Pi. we use two battery, so battery capacity is 2000mAh. Rated current for Raspberry Pi is 3A. We can only use camera module for 2/3 hours (approximately 45 minutes). That's the reason why we need to use battery charging module. Battery charging module get power from extenal power, so we can stably supply power for battery.
+
+#### Regulator (AMS1117-5V)
+As Rated Voltage of Raspberry Pi is 5V, we need to step down voltage of batteries. Otherwise overvoltage cause damage on Raspberry Pi board. Regulator is sort of step down convertor. It convert high voltage to specific voltage, besides regulator step down voltage to decided voltage regardless of input voltage. So we secure stable power consumption for Raspberry Pi by using regulator
+
+#### MIC / Speaker
+First input device and last output device. Our voice detected in MIC converts to text file. Speaker also print voice which converted from text file.
 <br>
 <br>
 <br>
@@ -378,32 +404,7 @@ wrapt                         1.12.1
 <br>
 <br>
 
-### Components
 
-#### Raspberry Pi
-Raspberry Pi on 2F run overall code of our project and also take input from MIC, print output to speaker and control Arduino nano using serial communication. Raspberry Pi on camera module is connected to camera module and communicate image information in real time with Raspberry Pi on 2F. Rated voltage and current for Raspberry Pi is 5V, 3A. As it control entire product, we put effort to stably supplying power for Raspberry Pi.
-
-#### Arduino Nano
-Arduino Nano communicate with Raspberry Pi with serial communication. When Nano get signal, it activate relay module and infrared sensor as compiled code. Likewise Arduino control our braille printer, so stable power supplying is important in our project
-
-#### Infrared Sensor (SEN030111)
-![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/140086562/53d5daa9-d9cd-40d2-ad7b-b270e1659127)
-Infrared Sensor detect move between two infrared sensor. We use this sensor for detecting insert of paper in printer. When sensor detect code, arduino get signal from sensor and send signal to relay modules.
-
-#### Relay Module
-![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/f8633603-c7e3-4fc8-8a98-ef7e566220ec)                                          Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
-
-#### Solenoid (JF-0530B-12V)
-Solenoid activate when 12V or more voltage applied to itself. By magnetic force iron rod in solenoids move when electricity flows. We use this move of rod as printer. When paper is detected, we run code for printing. However power consumption of solenoid is higher than we think, so it is hard to activate 6 solenoids at once. We use relay module for individual control of solenoids. For each time only one solenoid activate, so we prevent shortage of power.
-
-#### Lithium Polymer Battery (DTP 804030 1000) & Battery Charging Module (SZH-EK026)
-We use two 3.4V / 1000mAh lithium polymer battery. We connect is serially and use it as 7.8V power supply for Raspberry Pi. we use two battery, so battery capacity is 2000mAh. Rated current for Raspberry Pi is 3A. We can only use camera module for 2/3 hours (approximately 45 minutes). That's the reason why we need to use battery charging module. Battery charging module get power from extenal power, so we can stably supply power for battery.
-
-#### Regulator (AMS1117-5V)
-As Rated Voltage of Raspberry Pi is 5V, we need to step down voltage of batteries. Otherwise overvoltage cause damage on Raspberry Pi board. Regulator is sort of step down convertor. It convert high voltage to specific voltage, besides regulator step down voltage to decided voltage regardless of input voltage. So we secure stable power consumption for Raspberry Pi by using regulator
-
-#### MIC / Speaker
-First input device and last output device. Our voice detected in MIC converts to text file. Speaker also print voice which converted from text file.
 
 <br>
 <br>
