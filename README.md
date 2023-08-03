@@ -11,6 +11,7 @@
 
 # BlindBee
 <p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/62233d26-fd40-4f8d-b4ee-a5bd34a07adc width="500" height="500"></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/d7551504-5956-47ff-97ed-0d8f79a19199 width="398" height="500"></p>
 
 <br>
 <br>
@@ -126,6 +127,10 @@ Technologies used are
 ## Design
 The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
 You can also download CAD files [here](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip).
+
+
+
+
 ![BB_camera](https://github.com/mingming2000/daAIson/assets/138636306/dbb97edd-246c-46b9-b045-129efbaf26ad "BB_camera")
 
 - BB_camera - Here is a device that recognizes qr.
