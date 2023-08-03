@@ -48,7 +48,20 @@ BB_camera - Here is a device that recognizes qr.
 
 BB_Body - There is a device that outputs voices for each situation and recognizes voices and a device that prints braille.
 
-### State Diagram
+# Software
+## file hierarcy
+![file_hierarchy drawio](https://github.com/mingming2000/daAIson/assets/102716945/6a18278c-bcc1-48e8-bb03-1b3a5c41b27e)
+### Server
+- main.py : When button pushed, BlindBee program starts by running this file.
+- state.py : difines 4 state (S0 ~ S4) and logs current state.
+  <br>Details are described [here](#State-Diagram)
+- 
+
+## State Diagram
+![flowchart_daAIson drawio](https://github.com/mingming2000/daAIson/assets/102716945/1672575b-1d79-4dbf-ba27-278232c67eeb)
+
+
+
 
 ### pip list
 ```
