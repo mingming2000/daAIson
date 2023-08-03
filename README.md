@@ -20,7 +20,7 @@
 <br>
 
 # Table of content
- 1. [Motivation](#Motivation)
+ 1. [Motivation](#1.-Motivation)
     1) [Ideas](#Ideas)
  3. [Software](#2.Software)
     1) [State Diagram](#State-Diagram)
