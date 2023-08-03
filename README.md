@@ -19,6 +19,20 @@
 <br>
 <br>
 
+# Table of content
+ 1. [Motivation](#Motivation)
+ 2. [Software](#Software)
+ 3. [Hardware](#Hardware)
+    1. [Architectures](#architectures)
+    2. [Encoders](#encoders)
+    3. [Timm Encoders](#timm)
+ 4. [Discussion](#Discussion)
+    1. [Input channels](#input-channels)
+    2. [Auxiliary classification output](#auxiliary-classification-output)
+    3. [Depth](#depth)
+ 5. [Appendix](#Appendix)
+
+
 Motivation
 =============
 Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are everyday objects. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for visually impaired individuals to do the same. (source: https://www.joongang.co.kr/article/23615660#home)
