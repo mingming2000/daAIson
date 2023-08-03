@@ -1,9 +1,9 @@
 ![image](https://github.com/mingming2000/daAIson/assets/102716945/69e5ae9b-3488-426a-9ecf-a3037c19946c)
 
->We are **daAIson** of Korea Univ. HandS 
+>We are **daAIson** of Korea Univ. **HandS** 
 ><br>We made BlindBee in the form of bees and beehives. 
 ><br>
-><br>This was done to make it easy for visually impaired people to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
+><br>This was done to make it easy for **visually impaired people** to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
 
 <br>
 <br>
@@ -20,22 +20,28 @@
 <br>
 
 # Table of content
- 1. [Motivation](#Motivation)
- 2. [Software](#Software)
- 3. [Hardware](#Hardware)
-    1. [Architectures](#architectures)
-    2. [Encoders](#encoders)
-    3. [Timm Encoders](#timm)
- 4. [Discussion](#Discussion)
-    1. [Input channels](#input-channels)
-    2. [Auxiliary classification output](#auxiliary-classification-output)
-    3. [Depth](#depth)
- 5. [Appendix](#Appendix)
+ 1. [Motivation](#1.Motivation)
+    1) [Ideas](#Ideas)
+ 3. [Software](#2.Software)
+    1) [State Diagram](#State-Diagram)
+    2) [File Hierarcy](#file-hierarcy)
+ 5. [Hardware](#3.Hardware)
+    1. [Design](#Design)
+    2. [Circuit files](#Circuit-files)
+    3. [Simple Diagram of Circuit](#Simple-diagram-of-circuit)
+ 6. [Discussion](#4.Discussion)
+ 7. [Appendix](#5.Appendix)
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-Motivation
+1.Motivation
 =============
-Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are everyday objects. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for visually impaired individuals to do the same. (source: https://www.joongang.co.kr/article/23615660#home)
+Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are everyday objects. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for visually impaired individuals to do the same. [(ref.)](https://www.joongang.co.kr/article/23615660#home)
 
 Currently, there are options available, such as smartphone apps that read text or video calls with social workers, to assist visually impaired individuals. However, these methods may be challenging for visually impaired individuals as they require pressing application buttons or making phone calls, which can be difficult using a phone.
 
@@ -62,7 +68,7 @@ In summary, the passage discusses the development of a device with QR codes and 
 <br>
 <br>
 
-# Software
+# 2.Software
 You can find pip list [here](#pip-list). All codes are written by python.
 
 Technologies used are
@@ -116,7 +122,7 @@ Technologies used are
 <br>
 <br>
 
-# Hardware
+# 3.Hardware
 ## Design
 The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
 You can also download CAD files [here](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip).
@@ -182,7 +188,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-Discussion
+4.Discussion
 =============
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
@@ -192,7 +198,7 @@ Discussion
 <br>
 <br>
 
-## Appendix
+## 5.Appendix
 ### Clone Our Github Project!
 
 ```
@@ -200,15 +206,7 @@ $ git clone https://github.com/mingming2000/daAIson.git
 ```
 ### A Quick Guide for Git/Github and Miniconda/Anaconda
 - Check out this [foloder](./docs/) that offers a quick guide for begineers.
-- There may be some confusion when reading the documentation because of my poor english skills. Thus, if you have questions about this, feel free to contact me (HeumWoo Park).
-- I wish you success in this project. Good Luck :)
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
