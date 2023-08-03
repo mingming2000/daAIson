@@ -188,8 +188,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-Discussion
-=============
+## Discussion
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
 2. For scalability, the information about visually impaired users' belongings stored in Blind Bee can be integrated with their smartphone apps, allowing the functionality to be extended to external devices and platforms. In this case, additional features that were not implemented in Blind Bee can be provided using technologies from different platforms.
@@ -402,5 +401,8 @@ As Rated Voltage of Raspberry Pi is 5V, we need to step down voltage of batterie
 #### MIC / Speaker
 First input device and last output device. Our voice detected in MIC converts to text file. Speaker also print voice which converted from text file.
 
+<br>
+<br>
+<br>
 
-<img src = https://github.com/mingming2000/daAIson/assets/102716945/fcac4a72-0d84-47e3-ac4d-b200684067dd>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/fcac4a72-0d84-47e3-ac4d-b200684067dd></p>
