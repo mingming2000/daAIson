@@ -1,4 +1,0 @@
-name: mkjeon_python
-channels:
-  - defaults
-prefix: /home/mkjeon/miniconda3/envs/mkjeon_python
