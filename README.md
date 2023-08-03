@@ -20,7 +20,7 @@
 <br>
 
 # Table of content
- 1. [Motivation](#1.Motivation)
+ 1. [Motivation](#Motivation)
     1) [Ideas](#Ideas)
  3. [Software](#2.Software)
     1) [State Diagram](#State-Diagram)
@@ -39,7 +39,7 @@
 <br>
 <br>
 
-1.Motivation
+Motivation
 =============
 Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are everyday objects. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for visually impaired individuals to do the same. [(ref.)](https://www.joongang.co.kr/article/23615660#home)
 
@@ -68,7 +68,7 @@ In summary, the passage discusses the development of a device with QR codes and 
 <br>
 <br>
 
-# 2.Software
+# 2. Software
 You can find pip list [here](#pip-list). All codes are written by python.
 
 Technologies used are
