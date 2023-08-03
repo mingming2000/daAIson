@@ -1,65 +1,72 @@
-import csv
+from flask import Flask, request, jsonify
+import json
+import multiprocessing as mp
+import logging
 
-from blindbee import tts
-from blindbee import stt
-from blindbee import record
-from blindbee import camera
+from blindbee import service
+from state import State
+from text_color import TextColor
 
-if __name__ == '__main__':
 
-    print("------ Start BlineBee ------")
+logging.basicConfig(
+    format='[%(asctime)s : %(name)s ] %(message)s',
+    datefmt='%m/%d/%Y %I:%M:%S',
+    level=logging.INFO,
+)
 
-    r = record.Record()
-    s = stt.SpeechToText()
-    t= tts.TextToSpeech()
-    cam = camera.BlindBeeCamera()
-    
-    while(True):
-        t.play_audio("What can I help you?")
+to_service_queue = mp.Queue(maxsize=1)
+to_flask_queue = mp.Queue(maxsize=1)
+app = Flask(__name__)
+state = State()
 
-        print("[1] Detecting")
-        print("[2] Saving")
+logging.info(
+    TextColor.blue_bright(f"{state} ID: {id(state)}")
+)
 
-        r.recording("temp_input_audio.linear16")
-        respond1 = s.transcribe_audio_to_text("temp_input_audio.linear16")
-        respond1 = respond1.split()[0]
-        print(len(respond1))
-        find = 0
-        if(respond1=='detecting'):
-            t.play_audio("Please detect QR code.")
-            num1, _, _ = cam.recognize_qr()
-            f = open('/home/dspi/daAIson/main/qr.csv', 'r', encoding='utf-8')
-            rdr = csv.reader(f)
-            for line in rdr:
-                print('-----Searching index-------')
-                print(line)     # ex ['shampoo', '1']
-                if(line[0] == num1):
-                    name1 = line[1]
-                    print('find name: ',name1)
-                    # t.play_audio(f"The object is {name1} and saved as QR number {num1}.")
-                    t.play_audio(f"The object is {name1}.")
-                    find = 1
-            f.close()
-            
-            if(find == 1):
-                break
-        elif(respond1=='saving'):
-            t.play_audio("Please tell me the qr number.")
-            r.recording("temp_input_audio.linear16")
-            num2 = s.transcribe_audio_to_text("temp_input_audio.linear16")
-            num2 = num2.split()[0]
-            
-            t.play_audio("Please tell me the object name.")
-            r.recording("temp_input_audio.linear16")
-            name2 = s.transcribe_audio_to_text("temp_input_audio.linear16")
-            name2 = name2.split()[0]
-            
-            f = open('qr.csv', 'a', encoding='utf-8', newline='')
-            wr = csv.writer(f)
-            wr.writerow([str(num2), str(name2)])
-            f.close()
-            
-            t.play_audio(f"{name2} is saved as QR number {num2}.")
-            break
-        
-        t.play_audio("Please say again.")
+@app.route('/send/<qr_name>')
+def receive_json(qr_name):
+    logging.info(TextColor.yellow_bright(f"{qr_name}"))
+
+    try:
+        to_service_queue.put(qr_name)
+        logging.info(f"{to_service_queue.qsize()}")
+        _msg = to_flask_queue.get()
+        logging.info(f"{to_flask_queue.qsize()}")
+        logging.info( TextColor.yellow_bright(_msg) )
+        return "Success"
+        # if state.is_detecting:
+        #     queue.put(qr_name)
+        #     return "Success"
+        # else:
+        #     logging.info(
+        #         TextColor.blue_bright(f"{state} ID: {id(state)}")
+        #     )
+        #     return f"It is not Correct! state[{state}, {id(state)}]"
+    except Exception as e:
+        return str(e)
+
+
+def running_server():
+    global app
+    app.run(host='192.168.137.87', port=5000)
+
+
+if __name__ == "__main__":  
+    # instantiating
+    procs = [
+        mp.Process(
+            target=running_server, 
+            daemon=True),
+        mp.Process(
+            target=service.running_service, 
+            args=(to_service_queue, to_flask_queue, state,), 
+            daemon=True)
+    ]
+
+    for p in procs:
+        p.start()
+
+    # complete the processes
+    for p in procs:
+        p.join()
+
