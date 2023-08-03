@@ -1,24 +1,23 @@
 ![image](https://github.com/mingming2000/daAIson/assets/102716945/69e5ae9b-3488-426a-9ecf-a3037c19946c)
 
->We made BlindBee in the form of bees and beehives. 
+>We are **daAIson** of Korea Univ. HandS 
+><br>We made BlindBee in the form of bees and beehives. 
 ><br>
 ><br>This was done to make it easy for visually impaired people to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design. 
-><br>
-><br>The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
 
+<br>
+<br>
+<br>
 
-BlindBee
----------
-![BB_camera](https://github.com/mingming2000/daAIson/assets/138636306/dbb97edd-246c-46b9-b045-129efbaf26ad "BB_camera")
+# BlindBee
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/62233d26-fd40-4f8d-b4ee-a5bd34a07adc width="500" height="500"></p>
 
-BB_camera - Here is a device that recognizes qr.
-
-
-
-![BB_outside](https://github.com/mingming2000/daAIson/assets/138636306/89b549f9-83c0-44e7-986e-9c3ad1be6121 "BB_outside")
-
-BB_Body - There is a device that outputs voices for each situation and recognizes voices and a device that prints braille.
-size: 150X150X120 [HxWxZ] (mm)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 Motivation
 =============
@@ -39,6 +38,12 @@ Considering the unique needs of visually impaired individuals, the team also pai
 In summary, the passage discusses the development of a device with QR codes and Braille output to assist visually impaired individuals in identifying and distinguishing everyday objects. The device is voice-operated and designed with specific features to cater to the needs of visually impaired users.
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -87,69 +92,91 @@ Technologies used are
 |**client.py**      |When button on the camera module pushed, <br>picamera starts to **recognize QR codes** and request to server using **Flask**.|
 |**camera.py**      |**recognizes QR** code|
 
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 # Hardware
+## Design
+The interior and exterior design of the product was designed through a program called "Free Cad" and produced through a 3d printer at Korea University's makersplace.
+You can also download CAD files [here](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip).
+![BB_camera](https://github.com/mingming2000/daAIson/assets/138636306/dbb97edd-246c-46b9-b045-129efbaf26ad "BB_camera")
 
-CAD file
-----------
-here is cad files 
-
-[BB_CAD.zip](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip)
+- BB_camera - Here is a device that recognizes qr.
 
 
-In cad_BB.zip, the following folders and files are composed.
 
-![CAD_excell](https://github.com/mingming2000/daAIson/assets/138636306/9e69a6b9-5208-4751-a4a7-e9bf905a0547)
+![BB_outside](https://github.com/mingming2000/daAIson/assets/138636306/89b549f9-83c0-44e7-986e-9c3ad1be6121 "BB_outside")
 
-Blind Bee Composition
-=============
+- BB_Body - There is a device that outputs voices for each situation and recognizes voices and a device that prints braille.
+<br>size: 150X150X120 [HxWxZ] (mm)
+
+<br>
+
+
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/9e69a6b9-5208-4751-a4a7-e9bf905a0547>
+
+<br>
+
+## Circuit files
+
 BB is composed of many circuits and components such as Raspberry Pi 4 and Arduino Nano.
-We will show you simple circuit diagram and explain usage of each circuit and component. 
+<br>This is circuit diagram and explain usage of each circuit and component.
+<br>You can also download circuit files [here](https://github.com/mingming2000/daAIson/files/12224828/Circuit.Diagram.xlsx)
+![blindbee](https://github.com/mingming2000/daAIson/assets/102716945/3a12aceb-51d2-4a83-a206-7f2cd16e2af0)
 
-Circuit file
---------------
-[Circuit Diagram](https://github.com/mingming2000/daAIson/files/12224828/Circuit.Diagram.xlsx)
 
+## Simple diagram of circuit
 This is a simple diagram of how the circuit will connect and work.
 
-![circuit_overview](https://github.com/mingming2000/daAIson/assets/138636306/90e2c154-08db-4d0e-b6ac-1404fd2c0482)
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/90e2c154-08db-4d0e-b6ac-1404fd2c0482>
 
 This is a picture of how the circuit's power is distributed.
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/4cfde137-8fe3-4d2d-aba0-afd847fcdf9c>
 
 
-![circuit_power](https://github.com/mingming2000/daAIson/assets/138636306/4cfde137-8fe3-4d2d-aba0-afd847fcdf9c)
+ **1F**
+ - First floor of circuit is power connection layer. We get 12V electricity from power supply and also get 5v electricity from external power using 5V converter. We use box socket for convinience of supplying power. Box socket is emplaced on each layer of circuit, so we can easily divide and supply 5V / 12V power. Also we use header socket for solenoids. Organizing 12V electricity and output of Relay-module in header socket for easy connecting to solenoids.
+
+ **2F**
+ - Second floor of circuit is Arduino-Relay layer. We use Arduino nano to control Relay-module and Infrared-sensor. Arduino nano get 5V, 20mA electricity to VCC and GND PIN and Arduiono send output signal to Relay-module(PIN 2,3,5,6,7,8) and Infrared-sensor (PIN 10).
+ - Relay-module is used to control Solenoids. we connect 12V electricity to COM terminal of Relay-module. If signal is sent to Signal-input of Relay-module, 12V electricity is supplied to Solenoids. 
+
+ **2.5F (Solenoids circuit)**
+ - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG. Solenoids activate sequentially only when they get 12V electricity from Relay-module, so power can be ditributed efficiently.  
+
+ **3F**
+ - Third floor of circuit is Raspberry Pi layer. We use Raspberry Pi to run overall code of our product and communicate with another Raspberry Pi in Camera module part. Also battery charging module is connected to 5V electricity and GND, so we can charge lithium polymer battery in camera module.
+
+ **Camera Module**
+ - On Camera Module part, another Raspberry Pi 4 and camera module is connected to PCB board. As Camera Module is separated with main body, so we should prepare another power supply for Raspberry Pi 4. We use two 3.4V lithuim polymer battery and connect it serially. two serially connected battery supply 7.8V voltage, but rated voltage of Raspberry Pi 4 i 5V. So we use regulator for stepping down voltage 7.8V to 5V
 
 
-> 1F
-> - First floor of circuit is power connection layer. We get 12V electricity from power supply and also get 5v electricity from external power using 5V converter. We use box socket for convinience of supplying power. Box socket is emplaced on each layer of circuit, so we can easily divide and supply 5V / 12V power. Also we use header socket for solenoids. Organizing 12V electricity and output of Relay-module in header socket for easy connecting to solenoids.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-> 2F
-> - Second floor of circuit is Arduino-Relay layer. We use Arduino nano to control Relay-module and Infrared-sensor. Arduino nano get 5V, 20mA electricity to VCC and GND PIN and Arduiono send output signal to Relay-module(PIN 2,3,5,6,7,8) and Infrared-sensor (PIN 10).
-> - Relay-module is used to control Solenoids. we connect 12V electricity to COM terminal of Relay-module. If signal is sent to Signal-input of Relay-module, 12V electricity is supplied to Solenoids. 
-
-> 2.5F (Solenoids circuit)
-> - This layer is connection circuit of Infrared-sensor / Solenoids and 2F. We use header sockets to easily distribute electric wire for each VCC and GND and SIG. Solenoids activate sequentially only when they get 12V electricity from Relay-module, so power can be ditributed efficiently.  
-
-> 3F
-> - Third floor of circuit is Raspberry Pi layer. We use Raspberry Pi to run overall code of our product and communicate with another Raspberry Pi in Camera module part. Also battery charging module is connected to 5V electricity and GND, so we can charge lithium polymer battery in camera module.
-
-> Camera Module
-> - On Camera Module part, another Raspberry Pi 4 and camera module is connected to PCB board. As Camera Module is separated with main body, so we should prepare another power supply for Raspberry Pi 4. We use two 3.4V lithuim polymer battery and connect it serially. two serially connected battery supply 7.8V voltage, but rated voltage of Raspberry Pi 4 i 5V. So we use regulator for stepping down voltage 7.8V to 5V
-
-
-
- 
-Possiblilty of futher developement
+Discussion
 =============
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
 2. For scalability, the information about visually impaired users' belongings stored in Blind Bee can be integrated with their smartphone apps, allowing the functionality to be extended to external devices and platforms. In this case, additional features that were not implemented in Blind Bee can be provided using technologies from different platforms.
 
-
+<br>
+<br>
+<br>
 
 ## Appendix
 ### Clone Our Github Project!
@@ -157,11 +184,21 @@ Possiblilty of futher developement
 ```
 $ git clone https://github.com/mingming2000/daAIson.git
 ```
-## A Quick Guide for Git/Github and Miniconda/Anaconda
+### A Quick Guide for Git/Github and Miniconda/Anaconda
 - Check out this [foloder](./docs/) that offers a quick guide for begineers.
 - There may be some confusion when reading the documentation because of my poor english skills. Thus, if you have questions about this, feel free to contact me (HeumWoo Park).
 - I wish you success in this project. Good Luck :)
-  
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ### pip list
 ```
 Package                       Version
@@ -321,6 +358,11 @@ Werkzeug                      1.0.1
 wheel                         0.34.2
 wrapt                         1.12.1
 ```
+
+<br>
+<br>
+<br>
+
 ### Components
 
 #### Raspberry Pi
