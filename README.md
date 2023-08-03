@@ -188,7 +188,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-## Discussion
+# Discussion
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
 2. For scalability, the information about visually impaired users' belongings stored in Blind Bee can be integrated with their smartphone apps, allowing the functionality to be extended to external devices and platforms. In this case, additional features that were not implemented in Blind Bee can be provided using technologies from different platforms.
@@ -197,7 +197,7 @@ This is a picture of how the circuit's power is distributed.
 <br>
 <br>
 
-## Appendix
+# Appendix
 ### Clone Our Github Project!
 
 ```
