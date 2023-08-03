@@ -134,19 +134,17 @@ You can also download CAD files [here](https://github.com/mingming2000/daAIson/f
 
 ![BB_camera](https://github.com/mingming2000/daAIson/assets/138636306/dbb97edd-246c-46b9-b045-129efbaf26ad "BB_camera")
 
-- BB_camera - Here is a device that recognizes qr.
+- BB_camera - Here is a device that `recognizes qr`.
 
 
+![BB_body](https://github.com/mingming2000/daAIson/assets/138636306/44a77ba6-b23f-44ab-8620-5d9a44a58352)
 
-![BB_outside](https://github.com/mingming2000/daAIson/assets/138636306/89b549f9-83c0-44e7-986e-9c3ad1be6121 "BB_outside")
-
-- BB_Body - There is a device that outputs voices for each situation and recognizes voices and a device that prints braille.
+- BB_Body - There is a device that `outputs voices` for each situation and `recognizes voices` and a device that `prints braille`.
 <br>size: 150X150X120 [HxWxZ] (mm)
 
 <br>
 
-
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/9e69a6b9-5208-4751-a4a7-e9bf905a0547>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/06ad6d9f-a75c-4f8e-a98f-6fb53f00085b width="45%" height="45%">
 
 <br>
 
