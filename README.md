@@ -160,10 +160,10 @@ BB is composed of many circuits and components such as Raspberry Pi 4 and Arduin
 ## Simple diagram of circuit
 This is a simple diagram of how the circuit will connect and work.
 
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/90e2c154-08db-4d0e-b6ac-1404fd2c0482>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/b85c7f6b-a7ca-436a-873d-443dacd9a477>
 
 This is a picture of how the circuit's power is distributed.
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/4cfde137-8fe3-4d2d-aba0-afd847fcdf9c>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/54b52231-a0ab-41f1-82fc-9bf2325800f7>
 
 
  **1F**
