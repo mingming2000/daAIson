@@ -3,7 +3,6 @@
 >We are `daAIson` of Korea Univ. [HandS](https://hands.korea.ac.kr/)
 ><br>We made `BlindBee` in the form of bees and beehives. 
 ><br>
-><br>This was done to make it easy for `visually impaired people` to spot because yellow is the most visible color, and to make it easy to be sure that it is a BB product through a unique design.
 >
 >The project aims to assist visually impaired individuals in distinguishing 'everyday objects' like containers and cosmetic products. We've used 'QR codes' for information storage, recognized by the camera, and incorporated 'Braille output' for tactile identification. The device features voice-operated functions using 'Google API' for ease of use. The design considered visually impaired users, utilizing a 'yellow color' and a 'bee-shaped appearance' for easy recognition through touch.
 <br>
@@ -44,21 +43,21 @@
 
 Motivation
 =============
-Sealed containers, PET bottles, and commonly sold cosmetics and medicine bottles are 'everyday objects'. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for 'visually impaired individuals' to do the same. [(ref.)](https://www.joongang.co.kr/article/23615660#home)
+storage containers, PET bottles, and commonly sold cosmetics and medicine bottles are 'everyday objects'. They all have standardized shapes, but there are numerous products with different contents. While sighted individuals can differentiate these objects through visual cues, it is nearly impossible for 'visually impaired individuals' to do the same. [(ref.)](https://www.joongang.co.kr/article/23615660#home)
 
-Currently, there are options available, such as smartphone apps that read text or video calls with social workers, to assist visually impaired individuals. However, these methods may be challenging for visually impaired individuals as they require pressing application buttons or making phone calls, which can be difficult using a phone.
+Currently, there are options available, such as smartphone apps that read text or video calls with social workers, to assist visually impaired individuals. However, these methods are inconvenient for visually impaired individuals as they require pressing application buttons or making phone calls
 
-Additionally, some products have 'Braille' on them, but it is inadequate. For example, all beverages may be labeled simply as "beverage" or "carbonated," making it hard to distinguish specific product names. To address these issues and enable visually impaired individuals to independently identify objects, the team aimed to create a device that can easily store and differentiate object information.
+Additionally, some products have 'Braille' on them, but it is inadequate. For example, all beverages may be labeled simply as "beverage" or "carbonated," making it hard to distinguish specific product names. To address these issues and enable visually impaired individuals to independently identify objects, our team aimed to create a device that can easily store and differentiate object information.
 
 Ideas
 -----------
 The device incorporates two main approaches: 'QR codes' and 'Braille output'. QR codes are used to store information about the objects, making it easy to encode and decode data. The device utilizes a camera and 'open CV' technology to recognize QR codes visually. To assist 'tactile' recognition, Braille is printed around the QR codes so that visually impaired individuals can differentiate objects using their sense of touch. Instead of expensive Braille printers, the device employs affordable solenoid actuators to create embossed Braille on paper.
 
-To ensure ease of use for visually impaired users, the team designed the device to be entirely voice-operated. They utilized 'Google API' for text-to-speech and speech-to-text conversions, enabling visually impaired individuals to interact with the device using voice commands.
+To ensure ease of use for visually impaired users, our team designed the device to be entirely voice-operated. They utilized 'Google API' for text-to-speech and speech-to-text conversions, enabling visually impaired individuals to interact with the device using voice commands.
 
-Considering the unique needs of visually impaired individuals, the team also paid special attention to the design of the device. They used a 'yellow color' for the device's appearance, which is easy for visually impaired individuals to recognize. Additionally, they chose a distinctive shape, resembling a bee, to facilitate tactile differentiation.
+Considering the unique needs of visually impaired individuals, our team also paid special attention to the design of the device. They used a 'yellow color' for the device's appearance, which is easy for visually impaired individuals to recognize. Additionally, they chose a distinctive shape, resembling a bee, to facilitate tactile differentiation.
 
-In summary, the passage discusses the development of a device with QR codes and Braille output to assist visually impaired individuals in identifying and distinguishing everyday objects. The device is 'voice-operated' and designed with 'specific features' to cater to the needs of visually impaired users.
+In summary, our device utilized QR codes and Braille output to assist visually impaired individuals in identifying and distinguishing everyday objects. The device is 'voice-operated' and designed with 'specific features' to cater to the needs of visually impaired users.
 
 
 <br>
