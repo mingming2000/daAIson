@@ -69,7 +69,7 @@ Considering the unique needs of visually impaired individuals, our team also pai
 
 
 # Software
-You can find pip list [here](#pip-list). All codes are written by python.
+You can find pip list here ["pip-list"](https://github.com/mingming2000/daAIson/blob/main/docs/software.md). All codes are written by python.
 
 Technologies used are
 - HTTP using Flask
