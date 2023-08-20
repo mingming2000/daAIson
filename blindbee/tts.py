@@ -8,7 +8,7 @@ from google.cloud import texttospeech
 
 class TextToSpeech():
     def __init__(self):
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json" 
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/.json" 
         self.client = texttospeech.TextToSpeechClient()
     
     # def play_audio(self, txt):
@@ -17,7 +17,7 @@ class TextToSpeech():
 
     def play_audio(self, txt):
         # Set up google speech API
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/"    # Text To Speech API
     
         # Input text to be spoken
         synthesis_input = texttospeech.SynthesisInput(text=txt)
@@ -49,7 +49,7 @@ class TextToSpeech():
 
     def mkaudio(self, txt):
         # Set up google speech API
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/.json"    # Text To Speech API
     
         # Input text to be spoken
         synthesis_input = texttospeech.SynthesisInput(text=txt)
@@ -85,8 +85,8 @@ class TextToSpeech():
 
     def translationQR(self, txt):
         # Set up google speech API
-        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"    # Text To Speech API
-        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \ /home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json" # Speech To Text API
+        os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/dspi/storage/.json"    # Text To Speech API
+        # os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \ /home/dspi/storage/.json" # Speech To Text API
     
         # Input text to be spoken
         synthesis_input = texttospeech.SynthesisInput(text=txt)
@@ -118,7 +118,7 @@ class TextToSpeech():
 
     def testing(self, file_name):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
-            "/home/dspi/storage/dauntless-graph-393517-4fc404d248f0.json"
+            "/home/dspi/storage/.json"
         synthesis_input = texttospeech.SynthesisInput(text="Testing Text to Speech")
 
         voice = texttospeech.VoiceSelectionParams(
