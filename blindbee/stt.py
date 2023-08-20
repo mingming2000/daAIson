@@ -6,12 +6,12 @@ from google.cloud import speech
 from pydub import AudioSegment
 
 # Speech To Text API
-# $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
+# $ export GOOGLE_APPLICATION_CREDENTIALS="/home/dspi/storage/.json"
 
 class SpeechToText():
     def __init__(self):
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
-            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
+            "/home/dspi/storage/.json"
         self.client = speech.SpeechClient()
 
     def record(self):
@@ -20,7 +20,7 @@ class SpeechToText():
 
     def transcribe_audio_to_text(self, speech_file: str) -> speech.RecognizeResponse:
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
-            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
+            "/home/dspi/storage/.json"
         """Transcribe the given audio file."""
 
         # read audio file
@@ -49,7 +49,7 @@ class SpeechToText():
 
     def testing(self) -> speech.RecognizeResponse:
         os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = \
-            "/home/dspi/storage/dauntless-graph-393517-0433c47d97ff.json"
+            "/home/dspi/storage/.json"
         """Transcribe the given audio file."""
 
         # read audio file
