@@ -164,10 +164,10 @@ Check out this [file](./docs/hardware.md) offering details of circuit and compen
 
 # Experiment video
 ## Standby
-https://github.com/mingming2000/daAIson/assets/140086562/7858a9ad-c873-449c-ac63-2e8fdad5868d
+https://github.com/mingming2000/daAIson/assets/140086562/4eb454f2-1be7-4a37-ad11-7c3ffac09860
 
 ## Detecting
-https://github.com/mingming2000/daAIson/assets/140086562/8594ddeb-64dc-4264-b173-598ef31189a2
+https://github.com/mingming2000/daAIson/assets/140086562/481e7d64-7d70-4cdc-a21e-00dd835490ee
 
 
 <br>
