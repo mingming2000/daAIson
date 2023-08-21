@@ -169,6 +169,9 @@ https://github.com/mingming2000/daAIson/assets/140086562/4eb454f2-1be7-4a37-ad11
 ## Detecting
 https://github.com/mingming2000/daAIson/assets/140086562/481e7d64-7d70-4cdc-a21e-00dd835490ee
 
+## Braille Printer
+https://github.com/mingming2000/daAIson/assets/140086562/291d79b4-2870-48e7-90ce-9ae232406001
+
 
 <br>
 <br>
