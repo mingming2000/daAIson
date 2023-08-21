@@ -38,7 +38,8 @@ We are `daAIson` at Korea Univ. [HandS](https://hands.korea.ac.kr/)
     2. [Circuit files](#Circuit-files)
     3. [Simple Diagram of Circuit](#Simple-diagram-of-circuit)
     4. [Usage of Each Components](#Usage-of-Each-Components)
- 6. [Discussion](#Discussion)
+ 6. [Experiment Video](#Experiment Video)
+ 7. [Discussion](#Discussion)
 
 <br>
 <br>
@@ -162,7 +163,7 @@ Check out this [file](./docs/hardware.md) offering details of circuit and compen
 <br>
 <br>
 
-# Experiment video
+# Experiment Video
 ## Standby
 https://github.com/mingming2000/daAIson/assets/140086562/4eb454f2-1be7-4a37-ad11-7c3ffac09860
 
