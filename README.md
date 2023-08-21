@@ -162,6 +162,8 @@ Check out this [file](./docs/hardware.md) offering details of circuit and compen
 <br>
 <br>
 
+# Experiment video
+
 # Discussion
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
 
