@@ -163,6 +163,18 @@ Check out this [file](./docs/hardware.md) offering details of circuit and compen
 <br>
 
 # Experiment video
+## Standby
+https://github.com/mingming2000/daAIson/assets/140086562/7858a9ad-c873-449c-ac63-2e8fdad5868d
+
+## Detecting
+https://github.com/mingming2000/daAIson/assets/140086562/8594ddeb-64dc-4264-b173-598ef31189a2
+
+
+<br>
+<br>
+<br>
+
+
 
 # Discussion
 1. It would be more useful to add a feature that identifies objects based on information such as their shape, size, and text written on the surface, without the need for QR code recognition, using deep learning.
