@@ -38,7 +38,7 @@ We are `daAIson` at Korea Univ. [HandS](https://hands.korea.ac.kr/)
     2. [Circuit files](#Circuit-files)
     3. [Simple Diagram of Circuit](#Simple-diagram-of-circuit)
     4. [Usage of Each Components](#Usage-of-Each-Components)
- 6. [Experiment Video](#Experimnet-Video)
+ 6. [Experiment Video](#experimnet-video)
  7. [Discussion](#Discussion)
 
 <br>
