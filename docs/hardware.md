@@ -1,5 +1,5 @@
 # CAD files
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/06ad6d9f-a75c-4f8e-a98f-6fb53f00085b width="45%" height="45%">
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/693a19bb-24d5-485c-9eba-a72cf1def2bd width="45%" height="45%">
 
 You can also download CAD files [here](https://github.com/mingming2000/daAIson/files/12224967/BB_CAD.zip).
 
@@ -8,15 +8,15 @@ You can also download CAD files [here](https://github.com/mingming2000/daAIson/f
 BB is composed of many circuits and components such as Raspberry Pi 4 and Arduino Nano.
 <br>This is circuit diagram and explain usage of each circuit and component.
 <br>You can also download circuit files [here](https://github.com/mingming2000/daAIson/files/12224828/Circuit.Diagram.xlsx)
-![blindbee](https://github.com/mingming2000/daAIson/assets/102716945/3a12aceb-51d2-4a83-a206-7f2cd16e2af0)
+![blindbee](https://github.com/mingming2000/daAIson/assets/138636306/f60bf604-848a-4405-a78f-32f31efd46dc)
 
 ## Simple diagram of circuit
 This is a simple diagram of how the circuit will connect and work.
 
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/b85c7f6b-a7ca-436a-873d-443dacd9a477>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/f37e16b7-4bd3-4028-980e-94edd6bfb42c>
 
 This is a picture of how the circuit's power is distributed.
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/54b52231-a0ab-41f1-82fc-9bf2325800f7>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/be1e5e08-be7c-4eb4-bb24-fa3b8d05a08b>
 
 
  **1F**
@@ -44,12 +44,11 @@ Raspberry Pi on 2F run overall code of our project and also take input from MIC,
 Arduino Nano communicate with Raspberry Pi with serial communication. When Nano get signal, it activate relay module and infrared sensor as compiled code. Likewise Arduino control our braille printer, so stable power supplying is important in our project
 
 ### Infrared Sensor (SEN030111)
-![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/140086562/755d05cd-9684-4b1f-b4b5-3b72c64648c9)
+![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/138636306/d8178c9e-7885-4a39-beeb-eff6213b13dc)
 Infrared Sensor detect move between two infrared sensor. We use this sensor for detecting insert of paper in printer. When sensor detect code, arduino get signal from sensor and send signal to relay modules.
 
 ### Relay Module
-![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/20606315-6575-478a-bd33-7eb7d343bced)
-Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
+![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/138636306/8aba4fc0-d6b2-47d9-822f-ffd415360ad6)                                          Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
 
 ### Solenoid (JF-0530B-12V)
 Solenoid activate when 12V or more voltage applied to itself. By magnetic force iron rod in solenoids move when electricity flows. We use this move of rod as printer. When paper is detected, we run code for printing. However power consumption of solenoid is higher than we think, so it is hard to activate 6 solenoids at once. We use relay module for individual control of solenoids. For each time only one solenoid activate, so we prevent shortage of power.
