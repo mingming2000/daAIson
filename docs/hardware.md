@@ -44,11 +44,11 @@ Raspberry Pi on 2F run overall code of our project and also take input from MIC,
 Arduino Nano communicate with Raspberry Pi with serial communication. When Nano get signal, it activate relay module and infrared sensor as compiled code. Likewise Arduino control our braille printer, so stable power supplying is important in our project
 
 ### Infrared Sensor (SEN030111)
-
+![Infrared Sensor](https://github.com/mingming2000/daAIson/assets/140086562/755d05cd-9684-4b1f-b4b5-3b72c64648c9)
 Infrared Sensor detect move between two infrared sensor. We use this sensor for detecting insert of paper in printer. When sensor detect code, arduino get signal from sensor and send signal to relay modules.
 
 ### Relay Module
-![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/7c04d09b-3762-45d1-b167-bd1f1cfc920b)
+![1CH Relay Module](https://github.com/mingming2000/daAIson/assets/140086562/20606315-6575-478a-bd33-7eb7d343bced)
 Each Relay Module has 6 port.VCC and GND for activation and SIG input for control. COM port is common terminal which always connected to relay module. We apply 12V voltage to COM port. NO / NC ports are core terminals of relay module. If there's no signal input COM terminal is connected to NO terminal. If module get electrical signal to SIG port, COM termial is connected to NC terminal. It makes relay module as sort of switch. We use one 2CH Relay module and one 4CH Relay module.
 
 ### Solenoid (JF-0530B-12V)
