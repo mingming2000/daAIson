@@ -1,11 +1,11 @@
-<p align="left"><img src = https://github.com/mingming2000/daAIson/assets/102716945/fcac4a72-0d84-47e3-ac4d-b200684067dd width="200" height="200"></p>
+<p align="left"><img src = https://github.com/mingming2000/daAIson/assets/138636306/39200a52-a539-40f4-bbc3-e02f2d81994f width="200" height="200"></p>
 
 We are `daAIson` at Korea Univ. [HandS](https://hands.korea.ac.kr/) 
 
 <br>
 <br>
 
-![image](https://github.com/mingming2000/daAIson/assets/102716945/69e5ae9b-3488-426a-9ecf-a3037c19946c)
+![image](https://github.com/mingming2000/daAIson/assets/138636306/d4cb37fb-24ea-4d39-b3f7-a0bd5c89f7ab)
 
 
 <br>
@@ -19,8 +19,8 @@ We are `daAIson` at Korea Univ. [HandS](https://hands.korea.ac.kr/)
 <br>
 
 # BlindBee
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/62233d26-fd40-4f8d-b4ee-a5bd34a07adc width="500" height="500"></p>
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/d7551504-5956-47ff-97ed-0d8f79a19199 width="398" height="500"></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/af1afc94-6042-462e-bc63-166f0d00c0f2 width="500" height="500"></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/3aacdee7-3c05-48a8-963c-bc2e8cc1410e width="398" height="500"></p>
 
 <br>
 <br>
@@ -78,7 +78,7 @@ Technologies used are
 - Multiprocessing
 
 ## State Diagram
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/3711c096-3833-4f30-986e-648e5f23e6d4></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/66ae22db-847e-4e1e-b2d6-e2f42df6e870></p>
 
 - `S0` : standby. When switch on, it changes to State1 (S1)
 - `S1` : BlindBee starts. says "What can I help you?"
@@ -89,7 +89,7 @@ Technologies used are
 - `S3` : When user says object name and QR number, server saves them in qr.csv
 
 ## File hierarcy
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/102716945/6a18278c-bcc1-48e8-bb03-1b3a5c41b27e></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/9a5c1bc7-7417-49fe-940a-6994e90558f1></p>
 <br>
 
 ### 1) Server (Main Body)
@@ -122,13 +122,13 @@ Technologies used are
 We made BlindBee in the form of `bees and beehives`. Becuase yellow is easy to recognize for the blind and uneven shape is differ from other home appliance.
 
 The interior and exterior design of the product was designed through a program called `Free Cad` and produced through a 3d printer at Korea University's makersplace.
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/dbb97edd-246c-46b9-b045-129efbaf26ad "BB_camera" width="300%" height="300%"></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/ab3c012a-de93-4d61-9e11-f32d1cd8f75d "BB_camera" width="300%" height="300%"></p>
 
 
 - BB_camera - Here is a device that `recognizes QR code`.
 
 
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/44a77ba6-b23f-44ab-8620-5d9a44a58352 width="300%" height="300%"></p>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/48e77775-279d-44fd-8a77-459dab78e544 width="300%" height="300%"></p>
 
 - BB_Body - There is a device that `outputs voices` for each situation and `recognizes voices` and a device that `prints braille`.
 <br>size: 150X150X120 [HxWxZ] (mm)
@@ -140,10 +140,10 @@ The interior and exterior design of the product was designed through a program c
 ## Simple diagram of circuit
 This is a simple diagram of how the circuit will connect and work.
 
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/b85c7f6b-a7ca-436a-873d-443dacd9a477>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/46f42d75-3d07-4258-b86c-a28f73bd7009>
 
 This is a picture of how the circuit's power is distributed.
-<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/140086562/54b52231-a0ab-41f1-82fc-9bf2325800f7>
+<p align="center"><img src = https://github.com/mingming2000/daAIson/assets/138636306/53474c69-6212-486e-88db-9f0156fc234d>
 
  **Body**
  - First floor of circuit is `power connection` layer. 
@@ -165,13 +165,13 @@ Check out this [file](./docs/hardware.md) offering details of circuit and compen
 
 # Experiment Video
 ## Standby
-https://github.com/mingming2000/daAIson/assets/140086562/46813393-b5b6-4530-819f-2fd87cb6ed81
+https://github.com/mingming2000/daAIson/assets/138636306/732a7c2b-e2ad-42b6-8cf1-595ab067b30e
 
 ## Detecting
-https://github.com/mingming2000/daAIson/assets/140086562/bbacc482-a383-426f-8a66-f1ac884f8c54
+https://github.com/mingming2000/daAIson/assets/138636306/23b28925-ab41-400d-b3c5-7b1b7f6afd8a
 
 ## Braille Printer
-https://github.com/mingming2000/daAIson/assets/140086562/181a12fd-fef2-4ee7-a5cc-f0eaa98a6a10
+https://github.com/mingming2000/daAIson/assets/138636306/ad55fa1f-8701-48a7-8e08-ca1f03817c68
 
 
 
